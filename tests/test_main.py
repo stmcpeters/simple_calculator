@@ -61,3 +61,11 @@ def test_div_two_numbers_float():
     result = calculator.div(13, 2)
 
     assert result == 6.5
+
+def test_div_three_numbers_float():
+
+    calculator = SimpleCalculator()
+
+    result = calculator.div(10, 4, 2)
+
+    assert result == 1.25
