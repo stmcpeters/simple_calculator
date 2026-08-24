@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from functools import reduce
+import operator
 
 class SimpleCalculator:
     def add(self, *args):
@@ -12,7 +13,7 @@ class SimpleCalculator:
       return reduce(sub2, args)
 
     def mul(self, *args):
-      def mul2(a, b):
-        return a * b
+      # def mul2(a, b):
+      #   return a * b
 
-      return reduce(mul2, args)
+      return reduce(operator.mul, args)
