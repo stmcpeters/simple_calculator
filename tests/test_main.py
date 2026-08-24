@@ -69,3 +69,10 @@ def test_div_three_numbers_float():
     result = calculator.div(10, 4, 2)
 
     assert result == 1.25
+
+def test_div_by_zero_returns_inf():
+    calculator = SimpleCalculator()
+
+    result = calculator.div(5, 0)
+
+    assert result == float("inf")
