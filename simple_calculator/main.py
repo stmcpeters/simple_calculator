@@ -18,5 +18,7 @@ class SimpleCalculator:
 
       return reduce(operator.mul, args)
 
-    def div(self, a, b):
-      return a / b
+    def div(self, *args):
+      # return a / b
+
+      return reduce(operator.truediv, args)
