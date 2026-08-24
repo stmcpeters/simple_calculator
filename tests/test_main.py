@@ -30,3 +30,17 @@ def test_subtract_three_numbers():
     result = calculator.sub(10, 4, 3)
 
     assert result == 3
+
+def test_multiplication_two_numbers():
+    calculator = SimpleCalculator()
+
+    result = calculator.mul(6, 4)
+
+    assert result == 24
+
+def test_multiplication_three_numbers():
+    calculator = SimpleCalculator()
+
+    result = calculator.mul(3, 2, 1)
+
+    assert result == 6
