@@ -5,8 +5,11 @@ class SimpleCalculator:
     def add(self, *args):
       return sum(args)
 
-    def sub(self, a, b):
-      return a - b
+    def sub(self, *args):
+      def sub2(a, b):
+        return a - b
+      
+      return reduce(sub2, args)
 
     def mul(self, *args):
       def mul2(a, b):
