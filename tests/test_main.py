@@ -16,4 +16,10 @@ def test_add_three_numbers():
     result = calculator.add(4, 5, 6)
 
     assert result == 15
-    
+
+def test_subtract_two_numbers():
+    calculator = SimpleCalculator()
+
+    result = calculator.sub(10, 3)
+
+    assert result == 7
