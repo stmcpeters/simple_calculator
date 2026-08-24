@@ -17,28 +17,28 @@ def test_add_three_numbers():
 
     assert result == 15
 
-def test_subtract_two_numbers():
+def test_sub_two_numbers():
     calculator = SimpleCalculator()
 
     result = calculator.sub(10, 3)
 
     assert result == 7
 
-def test_subtract_three_numbers():
+def test_sub_three_numbers():
     calculator = SimpleCalculator()
 
     result = calculator.sub(10, 4, 3)
 
     assert result == 3
 
-def test_multiplication_two_numbers():
+def test_mul_two_numbers():
     calculator = SimpleCalculator()
 
     result = calculator.mul(6, 4)
 
     assert result == 24
 
-def test_multiplication_three_numbers():
+def test_mul_three_numbers():
     calculator = SimpleCalculator()
 
     result = calculator.mul(3, 2, 1)
