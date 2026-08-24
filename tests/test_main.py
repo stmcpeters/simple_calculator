@@ -23,3 +23,10 @@ def test_subtract_two_numbers():
     result = calculator.sub(10, 3)
 
     assert result == 7
+
+def test_subtract_three_numbers():
+    calculator = SimpleCalculator()
+
+    result = calculator.sub(10, 4, 3)
+
+    assert result == 3
