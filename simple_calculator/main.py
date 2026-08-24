@@ -17,3 +17,6 @@ class SimpleCalculator:
       #   return a * b
 
       return reduce(operator.mul, args)
+
+    def div(self, a, b):
+      return a / b
