@@ -21,4 +21,7 @@ class SimpleCalculator:
     def div(self, *args):
       # return a / b
 
-      return reduce(operator.truediv, args)
+      try :
+        return reduce(operator.truediv, args)
+      except ZeroDivisionError:
+        return float("inf")
