@@ -44,3 +44,12 @@ def test_multiplication_three_numbers():
     result = calculator.mul(3, 2, 1)
 
     assert result == 6
+
+def test_mul_many_numbers():
+    numbers = range(1, 10)
+    
+    calculator = SimpleCalculator()
+
+    result = calculator.mul(*numbers)
+
+    assert result == 362880
